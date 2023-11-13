@@ -1,0 +1,11 @@
+body {
+  color: #3D3D3D;
+
+  .red {
+    color: #FF0000;
+
+    &:first-child {
+      color: #FF0000;
+    }
+  }
+}

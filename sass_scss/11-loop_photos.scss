@@ -1,0 +1,14 @@
+$list-names: (
+  john: 'john-background.jpg',
+  jane: 'jane-background.jpg',
+  bob: 'bob-background.jpg'
+);
+
+// main.scss
+@import 'list-names';
+
+@each $name, $background-image in $list-names {
+  .#{ $name } {
+    background-image: url('#{ $background-image }');
+  }
+}
