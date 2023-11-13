@@ -1,0 +1,26 @@
+:root {
+    
+    --color-dark-grey: #555;
+    
+    --color-red: #cd3e65;
+    --color-green: #08805b;
+    --valid-color: var(--color-green);
+    --error-color: var(--color-red);
+    
+    --text-color: #333; /* Existing variable */
+}
+
+
+button:hover {
+
+}
+
+.button-primary {
+    color: var(--color-white);
+    background: var(--color-primary);
+}
+
+.button-primary:hover {
+    color: var(--color-primary);
+    background: var(--color-white);
+}
