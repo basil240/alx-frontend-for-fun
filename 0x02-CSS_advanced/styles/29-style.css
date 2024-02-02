@@ -1,0 +1,56 @@
+/* 28-style.css */
+
+/* Edit the nav-item-link-hover property */
+.nav-item-link:hover {
+    color: var(--color-white); /* Set its value to the color-white variable */
+}
+
+/* Target the before pseudo-elements of nav-link inside nav */
+nav .nav-link::before {
+    content: ""; /* Set the values of these elements to empty using content */
+    position: absolute; /* Absolutely position the targeted elements */
+    top: 0; /* Set the vertical position to 0 */
+    left: 0; /* The horizontal position of the targeted elements should be 0 */
+    background-color: var(--color-white); /* Set the color of the background color of the targeted elements to the value color-white */
+    width: 0; /* The width of the targeted elements should be set to 0 */
+    height: 20% var(--root-font-size); /* Set the height to 20% of the root element value */
+}
+
+/* Target the before pseudo-elements of nav-link when nav-item is hover and is inside nav */
+nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary); /* Set the background color of the elements to the variable color-primary */
+    width: 100%; /* Set the width of the elements to 100% */
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    position: relative; /* Ensure positioning context for pseudo-elements */
+}

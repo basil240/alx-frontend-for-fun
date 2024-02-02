@@ -1,0 +1,61 @@
+/* 12-style.css */
+
+/* Targeting anchor elements with hyperlinks */
+a[href] {
+    /* Add styles for regular links here */
+}
+
+/* Targeting the visited state for the link */
+a[href]:visited {
+    font-style: italic;
+}
+
+/* Targeting the hover state for the link */
+a[href]:hover {
+    text-decoration: underline;
+}
+
+/* Targeting the active state for the link */
+a[href]:active {
+    background-color: var(--color-light-grey);
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

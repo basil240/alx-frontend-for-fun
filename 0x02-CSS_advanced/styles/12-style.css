@@ -1,0 +1,56 @@
+/* 11-style.css */
+
+/* New custom properties for section title */
+:root {
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+/* Targeting the section-title class */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,98 @@
+/* 29-style.css */
+
+/* Target card-outer within card-work */
+.card-work .card-outer {
+    position: relative; /* Relatively position the element */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Target the image inside card-image inside card-work */
+.card-work .card-image img {
+    height: 30rem; /* Set the height of these elements */
+    width: 100%; /* Set the width of this element to 100% */
+    object-fit: cover; /* Property: object-fit, Value: cover */
+    vertical-align: bottom; /* Vertically align to the bottom */
+}
+
+/* Target card-inner inside card-work */
+.card-work .card-inner {
+    position: absolute; /* Absolutely position the element */
+    top: -0.1rem; /* Vertically position with -0.1rem on the top */
+    left: -0.1rem; /* Horizontally position the element with -0.1rem on the left */
+    right: -0.1rem; /* Horizontally position the element with -0.1rem on the right */
+    z-index: 1; /* Set the z-order to 1 */
+}
+
+/* Target card-inner when card-work is hover */
+.card-work:hover .card-inner {
+    background-color: rgba(0, 0, 0, 0.7); /* Set the background color to this value */
+}
+
+/* Target card-title inside card-work */
+.card-work .card-title {
+    text-align: center; /* Center align the text */
+    margin: 0; /* Margins all around should be 0 */
+    opacity: 0; /* Opacity should be set to its lowest value */
+    height: 100%; /* The height of the selected elements should be 100% */
+    position: relative; /* The position should be relative */
+}
+
+/* Target the link inside card-title and card-work */
+.card-work .card-title a {
+    display: block; /* Make sure elements display as blocks */
+    text-decoration: none; /* Text should not be decorated */
+    padding-top: 45%; /* Padding on the top should be 45% */
+}
+
+/* Create the after pseudo-elements of the link (inside card-title and card-work) */
+.card-work .card-title a::after {
+    content: ""; /* The content property of these elements should have an empty value */
+    position: absolute; /* Absolutely position the selected elements */
+    top: 0; /* Set the top position to 0 */
+    right: 0; /* Set the right position to 0 */
+    left: 0; /* Set the left position to 0 */
+    bottom: 0; /* Set the bottom position to 0 */
+}
+
+/* Target card-title when card-work is hover */
+.card-work:hover .card-title {
+    opacity: 1; /* The opacity of these elements should be set to the value of 1 */
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

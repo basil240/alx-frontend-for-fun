@@ -1,0 +1,63 @@
+/* Custom Properties */
+:root {
+    --transition-duration: 0.3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Transformations on the card work */
+.card-work:hover .card-image {
+    transform: scale(1.2); /* Scale transform with a value of scale(1.2) on hover */
+}
+
+.card-work:hover .card-outer {
+    transform: scale(0.95); /* Scale transform with a value of scale(0.95) on hover */
+}
+
+/* Animations on navigation items */
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition effect on ::before */
+}
+
+/* Animation on button background in hover state */
+.button:hover {
+    transition: background-color var(--transition-duration) var(--transition-cubic-bezier), color var(--transition-duration) var(--transition-cubic-bezier); /* Transition on color and background-color properties */
+}
+
+/* Transitions on card works */
+.card-work .card-image,
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition on card-image and card-inner */
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    position: relative; /* Ensure positioning context for pseudo-elements */
+}

@@ -1,0 +1,82 @@
+/* 18-style.css */
+
+/* Custom properties */
+:root {
+    --section-tagline-margin: 0;
+}
+
+/* Styling for the section-tagline class */
+.section-tagline {
+    margin: var(--section-tagline-margin);
+}
+
+/* Styling for ul with the class row */
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styling for the col-1-3 class */
+.col-1-3 {
+    width: 33.33%;
+    float: left;
+    padding: calc(0.5 * var(--root-font-size));
+}
+
+/* Styling for the col-1-2 class */
+.col-1-2 {
+    width: 50%;
+    float: left;
+    padding: calc(0.5 * var(--root-font-size));
+}
+
+/* Styling for the footer-copyright class */
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+/* Styling for ul tags in the footer class */
+.footer ul {
+    text-align: right;
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

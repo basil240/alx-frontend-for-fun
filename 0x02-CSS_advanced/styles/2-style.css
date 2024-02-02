@@ -1,0 +1,67 @@
+/* 1-style.css */
+
+/* Set foreground color for the body */
+body {
+    color: #161616;
+}
+
+/* Set foreground color for all anchor elements */
+a {
+    color: #161616;
+}
+
+/* Hide elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color for elements with the class card-category */
+.card-category {
+    color: #D73953;
+}
+
+/* Set foreground color for elements with the class section-tagline */
+.section-tagline {
+    color: #D73953;
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

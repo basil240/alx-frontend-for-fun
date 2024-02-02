@@ -1,0 +1,58 @@
+/* 5-style.css */
+
+/* Custom properties for font weights */
+:root {
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+/* Set the boldness of fonts in the body to font-weight-regular */
+body {
+    font-weight: var(--font-weight-regular);
+}
+
+/* Set the boldness of fonts in the headings to font-weight-bold */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,76 @@
+/* 24-style.css */
+
+/* Custom properties for the root selector */
+:root {
+    --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
+}
+
+/* Add these selectors after the selector for anchor links in the active state */
+
+/* Button class selector */
+a:active + .button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+}
+
+/* Hover state for the button class selector */
+a:active + .button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background: var(--button-hover-background);
+}
+
+/* Dark theme adjustments */
+[data-section-theme="dark"] {
+    --button-color: var(--color-white);
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

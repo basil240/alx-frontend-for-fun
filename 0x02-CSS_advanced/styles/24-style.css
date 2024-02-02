@@ -1,0 +1,58 @@
+/* 23-style.css */
+
+/* Targeting card-title inside card-services */
+.card-services .card-title {
+    margin: 0; /* No margin on all sides */
+}
+
+/* Targeting a inside card-services */
+.card-services a {
+    display: block;
+    padding: calc(2 * var(--root-font-size)); /* Padding set to 2x the root element */
+    background-color: var(--color-light-grey);
+    text-decoration: none; /* Remove text decoration */
+}
+
+/* Hover state for a inside card-services */
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

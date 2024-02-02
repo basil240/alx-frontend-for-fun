@@ -1,0 +1,67 @@
+/* 27-style.css */
+
+/* Custom properties */
+:root {
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
+}
+
+/* Header class selector */
+.header {
+    padding: var(--header-padding); /* Pad the header with the value within the variable header-padding */
+}
+
+/* Header-logo class selector */
+.header-logo {
+    position: var(--header-logo-position); /* Position the header-logo with the value of the variable header-logo-position */
+}
+
+/* Target the link inside the header-logo class */
+.header-logo a {
+    display: var(--header-logo-link-display); /* Render the display using the value of the variable header-logo-link-display */
+    position: var(--header-logo-link-position); /* Position the links with the value of the variable header-logo-link-position */
+    top: var(--header-logo-link-top); /* Set the vertical position of the element using header-logo-link-top */
+    left: var(--header-logo-link-left); /* Set the horizontal position of the element using header-logo-link-left */
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

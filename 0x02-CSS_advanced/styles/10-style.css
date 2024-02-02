@@ -1,0 +1,56 @@
+/* 9-style.css */
+
+/* New custom property for section header alignment */
+:root {
+    --section-header-align: center;
+}
+
+/* Set horizontal alignment of the class section-header with section-header-align */
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+
+.section-tagline {
+    color: #D73953;
+}

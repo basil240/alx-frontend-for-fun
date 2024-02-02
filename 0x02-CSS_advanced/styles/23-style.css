@@ -1,0 +1,54 @@
+/* 22-style.css */
+
+/* Styling for the footer-address class */
+.footer-address {
+    color: var(--text-color);
+}
+
+/* Styling for the social-link class */
+.social-link {
+    display: block;
+}
+
+/* Styling for the social-link class that selects svg children */
+.social-link svg {
+    fill: var(--text-color);
+}
+
+/* Rest of your existing styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
